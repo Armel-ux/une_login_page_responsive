@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="site_d'inscription.css">
+    <script src="https://kit.fontawesome.com/c7495f0d92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Mon compte</a></li>
+            </ul>
+            <button onclick="sign_up()">Inscription</button>
+            <button onclick="login()">Connexion</button>
+        </nav>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="deroule">
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Mon compte</a></li>
+            </ul>
+            <button onclick="sign_up()">Inscription</button>
+            <button onclick="login()">Connexion</button>
+    </div>
+    <section class="main">
+        <div class="first-input">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text"  id="name" required placeholder="nom d'utilisateur">
+                <input type="email"  id="Email" placeholder="Adress Email">
+                <input type="tel" id="tel" placeholder="Numero de telephones">
+                <input type="password"  id="password" required placeholder="Mot de passe">
+            </div>
+            <div class="link1">
+                <p class="conditions"><a href="#">conditions & terms</a></p>
+                <input type="checkbox" id="check">
+                <label for="check">J'ai lu et accepter les conditions</label><br>
+                <input type="checkbox" id="check1">
+                <label for="check1">Se souvenir de moi</label>
+                <p>Vous avez deja un compte ? <a href="#" onclick="login()">connexion</a></p>
+                <button class="login-btn"  type="submit">creer un compte</button>
+            </div>
+        </div>
+
+        <div class="second-input" style="opacity: 0;">
+            <h1>Sign up</h1>
+            <div class="input-box">
+                <input type="text"  required placeholder="nom d'utilisateur">
+                <input type="email"placeholder="Adress Email">
+                <div class="sign2">
+                    <input type="email"placeholder="Adress Email">
+                    <input type="password"  required placeholder="Mot de passe">
+                </div>
+            </div>
+            <div class="link2">
+                <div style="width: 100%; text-align: center;" class="link2-btn"><button class="signup-btn" type="submit">se connecter</button></div>
+                <p class="conditions"><a href="#">Mot de passe oublier</a></p>
+                <p><a href="#" onclick="sign_up()">creer un compte</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="site_d'inscription.js"></script>
+</body>
+</html>
